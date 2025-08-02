@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background-image: url(../images/girl.jpeg);
+  background-image: url(../images/Screenshot\ 2025-08-02\ 200054.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -218,4 +218,22 @@ li {
   .social-icon {
     margin: 0;
   }
+}
+
+.about-bg {
+  background-image: url("../images/Screenshot\ 2025-08-02\ 200329.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects-bg {
+  background-image: url("../images/projects-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-bg {
+  background-image: url("../images/blog-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
