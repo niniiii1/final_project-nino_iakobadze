@@ -18,36 +18,29 @@ body {
 }
 
 nav {
-  background: empty;
-  padding: 0.5em 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
+  background: #222;
+  padding: 0.5rem 0;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2em;
-  margin: 0;
-  padding: 0;
+  gap: 2rem;
+  list-style: none;
 }
 
 nav a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   font-weight: 500;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background 0.2s;
-  gap: 5px;
 }
 
 nav a.active,
 nav a:hover {
   background: #0078d7;
-  color: #fff;
 }
 
 nav a.menu-link {
@@ -84,18 +77,20 @@ nav a.menu-link:hover {
 }
 
 footer {
-  text-align: center;
-  padding: 1em 0;
-  margin-top: auto;
-  font-size: 1em;
+  background: #222;
   color: #fff;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 1rem 0 0.5rem 0;
+  margin-top: auto;
 }
+
 .content {
-  margin: 3em auto;
-  padding: 2em;
-  border-radius: 10px;
   max-width: 700px;
+  margin: 2rem auto 1rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .content h1 {
@@ -164,19 +159,32 @@ button {
 
 .socials {
   margin-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .social-icon {
   width: 32px;
   height: 32px;
-  margin: 0 8px;
-  vertical-align: middle;
-  transition: transform 0.2s;
+  filter: grayscale(1);
+  transition: filter 0.2s, transform 0.2s;
 }
 
 .social-icon:hover {
-  transform: scale(1.15);
-  opacity: 0.8;
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+/* Reset some default browser styles */
+body,
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Responsive layout for tablets and phones */
