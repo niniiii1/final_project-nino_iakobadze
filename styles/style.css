@@ -80,14 +80,14 @@ footer {
   background: #222;
   color: #fff;
   text-align: center;
-  padding: 1rem 0 0.5rem 0;
+  padding: 0.7rem 0 0.3rem 0; /* less vertical padding */
   margin-top: auto;
 }
 
 .content {
   max-width: 700px;
-  margin: 2rem auto 1rem auto;
-  padding: 2rem;
+  margin: 1.5rem auto 1rem auto; /* less top margin */
+  padding: 1.5rem;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
@@ -158,10 +158,10 @@ button {
 }
 
 .socials {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .social-icon {
@@ -189,16 +189,11 @@ li {
 
 /* Responsive layout for tablets and phones */
 @media (max-width: 900px) {
-  .hero,
   .content {
-    max-width: 95vw;
-    padding: 2em 1em;
-  }
-  nav ul {
-    gap: 1em;
+    max-width: 98vw;
+    padding: 1em;
   }
   .projects {
-    flex-direction: column;
     gap: 1em;
   }
 }
@@ -213,19 +208,18 @@ li {
   nav ul {
     flex-direction: column;
     width: 100%;
-    gap: 0.5em;
+    gap: 0.3em;
     align-items: flex-start;
   }
-  .hero,
   .content {
-    padding: 1em 0.5em;
+    padding: 0.7em 0.3em;
     font-size: 1em;
   }
   .socials {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    gap: 0.7em;
   }
   .social-icon {
-    margin: 8px 0;
+    margin: 0;
   }
 }
